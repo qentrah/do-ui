@@ -1,5 +1,5 @@
 {
-  "name": "@qentrah/mathing-ui",
+  "name": "@qentrah/do-ui",
   "version": "0.1.0",
   "description": "Reusable React Native math learning UI, with caller-owned state and callbacks.",
   "license": "MIT",
@@ -69,12 +69,12 @@
   "author": "Qentrah",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qentrah/mathing-ui.git",
-    "directory": "packages/mathing-ui"
+    "url": "git+https://github.com/qentrah/do-ui.git",
+    "directory": "packages/do-ui"
   },
-  "homepage": "https://github.com/qentrah/mathing-ui#readme",
+  "homepage": "https://github.com/qentrah/do-ui#readme",
   "bugs": {
-    "url": "https://github.com/qentrah/mathing-ui/issues"
+    "url": "https://github.com/qentrah/do-ui/issues"
   },
   "publishConfig": {
     "access": "public"

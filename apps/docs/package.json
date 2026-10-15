@@ -1,5 +1,5 @@
 {
-  "name": "@qentrah/mathing-ui-docs",
+  "name": "@qentrah/do-ui-docs",
   "version": "0.1.0",
   "private": true,
   "main": "expo-router/entry",
@@ -17,7 +17,7 @@
     "docs:validate": "node scripts/validate-docs.cjs"
   },
   "dependencies": {
-    "@qentrah/mathing-ui": "workspace:*",
+    "@qentrah/do-ui": "workspace:*",
     "expo": "54.0.37",
     "expo-router": "6.0.24",
     "expo-font": "14.0.12",

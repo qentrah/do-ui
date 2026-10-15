@@ -15,7 +15,7 @@ jobs:
           node-version: 24
       - run: npm install -g pnpm@12.11.2
       - run: pnpm install --frozen-lockfile
-      - run: pnpm --filter @qentrah/mathing-ui build
-      - run: pnpm --filter @qentrah/mathing-ui-docs docs:generate
+      - run: pnpm --filter @qentrah/do-ui build
+      - run: pnpm --filter @qentrah/do-ui-docs docs:generate
       - run: pnpm check
       - run: pnpm build

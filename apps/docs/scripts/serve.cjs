@@ -11,4 +11,4 @@ http.createServer((request, response) => {
   if (!file) { response.writeHead(404); response.end('Not found'); return; }
   response.writeHead(200, {'Content-Type':mime[path.extname(file)] ?? 'application/octet-stream'});
   fs.createReadStream(file).pipe(response);
-}).listen(8091, '127.0.0.1', () => console.log('Standalone UI showcase: http://127.0.0.1:8091'));
+}).listen(Number(process.env.PORT ?? 8091), '127.0.0.1', () => console.log(`Do UI docs: http://127.0.0.1:${process.env.PORT ?? 8091}`));

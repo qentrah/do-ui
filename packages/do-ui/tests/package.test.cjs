@@ -7,7 +7,7 @@ const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).fla
 
 test('the package has no dependency on DodoMath routes, stores, or path aliases', () => {
   const manifest = require('../package.json');
-  assert.equal(manifest.name, '@qentrah/mathing-ui');
+  assert.equal(manifest.name, '@qentrah/do-ui');
   assert.equal(manifest.exports['.'].types, './dist/index.d.ts');
   for (const file of walk(path.join(root, 'src')).filter(file => /\.tsx?$/.test(file))) {
     const content = fs.readFileSync(file, 'utf8');

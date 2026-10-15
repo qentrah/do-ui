@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import { MotionPressable } from '@qentrah/mathing-ui';
+import { MotionPressable } from '@qentrah/do-ui';
 type PropRow={name:string;type:string;required:boolean;default:string;description:string};
 type API={name:string;description:string;props:PropRow[]};
 export function PropsTables({apis}:{apis:API[]}){

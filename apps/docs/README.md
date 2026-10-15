@@ -1,13 +1,13 @@
-# Mathing UI Showcase
+# Do UI Showcase
 
-A separate Expo app for `@qentrah/mathing-ui`. It has its own package manifest, app identity, Router tree, Metro/PostCSS configuration, fonts, TypeScript checks and web build. It imports reusable UI through the package name and has no DodoMath accounts, curriculum bank, XP store or backend configuration.
+A separate Expo app for `@qentrah/do-ui`. It has its own package manifest, app identity, Router tree, Metro/PostCSS configuration, fonts, TypeScript checks and web build. It imports reusable UI through the package name and has no DodoMath accounts, curriculum bank, XP store or backend configuration.
 
 ```sh
-pnpm --filter @qentrah/mathing-ui build
-pnpm --filter @qentrah/mathing-ui-docs web
+pnpm --filter @qentrah/do-ui build
+pnpm --filter @qentrah/do-ui-docs web
 ```
 
-The dev server uses port 8090. The same app runs through Expo on iOS and Android. `pnpm --filter @qentrah/mathing-ui-docs build:web` exports the standalone website to this app's `dist/` directory.
+The dev server uses port 8090. The same app runs through Expo on iOS and Android. `pnpm --filter @qentrah/do-ui-docs build:web` exports the standalone website to this app's `dist/` directory.
 
 The catalog retains component examples, 37 isolated screen-family templates, design tokens and 117 interactive grade references. Former store-bound component examples now mount the package's actual controlled components with local state and callbacks. Source-inspired examples remain distinct from reviewed lesson content and exact reference parity.
 

@@ -1,6 +1,6 @@
 # Credits and asset terms
 
-Mathing UI was extracted from Qentrah's DodoMath learning project. Original library code and generated companion/artwork assets are released under the MIT license selected by the owner. Nunito fonts retain their SIL Open Font License, bundled in assets/fonts/Nunito-OFL.txt.
+Do UI was extracted from Qentrah's DodoMath learning project. Original library code and generated companion/artwork assets are released under the MIT license selected by the owner. Nunito fonts retain their SIL Open Font License, bundled in assets/fonts/Nunito-OFL.txt.
 
 DodoMath began from the JavaScript Mastery React Native Lingua starter. Its upstream repository has no license. The release replaces the retained LessonCard, SocialButton and VerificationModal implementations with original API-compatible controls. The controlled TabBar had already been independently implemented for this library. No upstream starter fonts, authentication services or backend code are included.
 

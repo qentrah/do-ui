@@ -1,7 +1,7 @@
 import '../global.css';
 import { Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
-import { UIProvider, fonts } from '@qentrah/mathing-ui';
+import { UIProvider, fonts } from '@qentrah/do-ui';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ActivityIndicator, Text, View } from 'react-native';
 

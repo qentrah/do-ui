@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const ts = require('typescript');
 const path = require('node:path');
-const root = path.resolve(__dirname, '../../../packages/mathing-ui');
+const root = path.resolve(__dirname, '../../../packages/do-ui');
 const catalog = require('../src/data/catalog.json');
 const config=ts.readConfigFile(path.join(root,'tsconfig.json'),ts.sys.readFile);
 const parsed=ts.parseJsonConfigFileContent(config.config,ts.sys,root);
@@ -67,6 +67,6 @@ const docs=Object.fromEntries(catalog.components.map(entry=>{
  const declaration=path.join(root,'dist',relative.replace(/\.tsx$/,'.d.ts'));
  return [entry.id,{description:descriptions[entry.id],usage:usage(entry.id),apis:apiRows(file),file:relative,source:file.text,javascript:ts.transpileModule(file.text,{compilerOptions:{jsx:ts.JsxEmit.Preserve,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText,api:fs.existsSync(declaration)?fs.readFileSync(declaration,'utf8'):'See the exported TypeScript source.',styles}];
 }));
-const screenDocs=Object.fromEntries(catalog.screens.map(entry=>[entry.id,{description:`${entry.title} is an interactive ${entry.family} screen composition. It uses disposable local state and does not authenticate, grade attempts or persist learner progress.`,usage:`import { ScreenPreview } from '@qentrah/mathing-ui';\n\nexport function ${entry.id.replace(/(^|-)(\w)/g,(_,p,c)=>c.toUpperCase())}Screen() {\n  return <ScreenPreview family=${JSON.stringify(entry.family)} title=${JSON.stringify(entry.title)} />;\n}`,apis:docs.ScreenPreview.apis,note:'Screen-family template, not the original production route. Callbacks and backend integration belong to the consuming app.'}]));
+const screenDocs=Object.fromEntries(catalog.screens.map(entry=>[entry.id,{description:`${entry.title} is an interactive ${entry.family} screen composition. It uses disposable local state and does not authenticate, grade attempts or persist learner progress.`,usage:`import { ScreenPreview } from '@qentrah/do-ui';\n\nexport function ${entry.id.replace(/(^|-)(\w)/g,(_,p,c)=>c.toUpperCase())}Screen() {\n  return <ScreenPreview family=${JSON.stringify(entry.family)} title=${JSON.stringify(entry.title)} />;\n}`,apis:docs.ScreenPreview.apis,note:'Screen-family template, not the original production route. Callbacks and backend integration belong to the consuming app.'}]));
 fs.writeFileSync(path.join(__dirname,'../src/data/componentDocs.json'),JSON.stringify(docs));
 fs.writeFileSync(path.join(__dirname,'../src/data/screenDocs.json'),JSON.stringify(screenDocs));

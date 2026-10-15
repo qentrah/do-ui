@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Platform, ScrollView, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { MotionPressable } from '@qentrah/mathing-ui';
+import { MotionPressable } from '@qentrah/do-ui';
 import { tokenizeCode, tokenClasses, type CodeLanguage } from '../lib/codeTokens';
 const labels: Record<CodeLanguage,string> = {tsx:'TypeScript React',ts:'TypeScript',jsx:'JavaScript React',javascript:'JavaScript',css:'CSS',shell:'Shell'};
 const extensions: Record<CodeLanguage,string> = {tsx:'example.tsx',ts:'example.ts',jsx:'example.jsx',javascript:'example.js',css:'styles.css',shell:'Terminal'};

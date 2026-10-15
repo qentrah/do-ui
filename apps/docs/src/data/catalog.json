@@ -3,7 +3,7 @@
     {
       "id": "AlgebraModel",
       "title": "AlgebraModel",
-      "source": "@qentrah/mathing-ui/AlgebraModel",
+      "source": "@qentrah/do-ui/AlgebraModel",
       "exports": [
         "AlgebraModel"
       ],
@@ -13,7 +13,7 @@
     {
       "id": "CharacterSprite",
       "title": "CharacterSprite",
-      "source": "@qentrah/mathing-ui/CharacterSprite",
+      "source": "@qentrah/do-ui/CharacterSprite",
       "exports": [
         "CharacterName",
         "CharacterPose",
@@ -25,7 +25,7 @@
     {
       "id": "ChestArtwork",
       "title": "ChestArtwork",
-      "source": "@qentrah/mathing-ui/ChestArtwork",
+      "source": "@qentrah/do-ui/ChestArtwork",
       "exports": [
         "ChestArtwork"
       ],
@@ -35,7 +35,7 @@
     {
       "id": "CompletedMedal",
       "title": "CompletedMedal",
-      "source": "@qentrah/mathing-ui/CompletedMedal",
+      "source": "@qentrah/do-ui/CompletedMedal",
       "exports": [
         "CompletedMedal"
       ],
@@ -45,7 +45,7 @@
     {
       "id": "CompletionMoment",
       "title": "CompletionMoment",
-      "source": "@qentrah/mathing-ui/CompletionMoment",
+      "source": "@qentrah/do-ui/CompletionMoment",
       "exports": [
         "CompletionMoment"
       ],
@@ -55,7 +55,7 @@
     {
       "id": "CoursePlayer",
       "title": "CoursePlayer",
-      "source": "@qentrah/mathing-ui/CoursePlayer",
+      "source": "@qentrah/do-ui/CoursePlayer",
       "exports": [
         "PlayerProps",
         "CoursePlayer"
@@ -66,7 +66,7 @@
     {
       "id": "Dodo",
       "title": "Dodo",
-      "source": "@qentrah/mathing-ui/Dodo",
+      "source": "@qentrah/do-ui/Dodo",
       "exports": [
         "Dodo",
         "DodoMood"
@@ -77,7 +77,7 @@
     {
       "id": "DuoIcons",
       "title": "DuoIcons",
-      "source": "@qentrah/mathing-ui/DuoIcons",
+      "source": "@qentrah/do-ui/DuoIcons",
       "exports": [
         "DuoIcon"
       ],
@@ -87,7 +87,7 @@
     {
       "id": "FeedbackClock",
       "title": "FeedbackClock",
-      "source": "@qentrah/mathing-ui/FeedbackClock",
+      "source": "@qentrah/do-ui/FeedbackClock",
       "exports": [
         "FeedbackClock",
         "useFeedbackClock"
@@ -98,7 +98,7 @@
     {
       "id": "FeedbackPanel",
       "title": "FeedbackPanel",
-      "source": "@qentrah/mathing-ui/FeedbackPanel",
+      "source": "@qentrah/do-ui/FeedbackPanel",
       "exports": [
         "FeedbackFooter",
         "FeedbackPanel"
@@ -109,7 +109,7 @@
     {
       "id": "Fox",
       "title": "Fox",
-      "source": "@qentrah/mathing-ui/Fox",
+      "source": "@qentrah/do-ui/Fox",
       "exports": [
         "FoxMood",
         "Fox"
@@ -120,7 +120,7 @@
     {
       "id": "FoxLessonMotion",
       "title": "FoxLessonMotion",
-      "source": "@qentrah/mathing-ui/FoxLessonMotion",
+      "source": "@qentrah/do-ui/FoxLessonMotion",
       "exports": [
         "FoxLessonAction",
         "FoxLessonMotion"
@@ -131,7 +131,7 @@
     {
       "id": "FoxMotion",
       "title": "FoxMotion",
-      "source": "@qentrah/mathing-ui/FoxMotion",
+      "source": "@qentrah/do-ui/FoxMotion",
       "exports": [
         "FoxMotion"
       ],
@@ -141,7 +141,7 @@
     {
       "id": "FractionModel",
       "title": "FractionModel",
-      "source": "@qentrah/mathing-ui/FractionModel",
+      "source": "@qentrah/do-ui/FractionModel",
       "exports": [
         "FractionModel"
       ],
@@ -151,7 +151,7 @@
     {
       "id": "FunctionGraph",
       "title": "FunctionGraph",
-      "source": "@qentrah/mathing-ui/FunctionGraph",
+      "source": "@qentrah/do-ui/FunctionGraph",
       "exports": [
         "FunctionGraph"
       ],
@@ -161,7 +161,7 @@
     {
       "id": "GoldStripe",
       "title": "GoldStripe",
-      "source": "@qentrah/mathing-ui/GoldStripe",
+      "source": "@qentrah/do-ui/GoldStripe",
       "exports": [
         "GoldStripe"
       ],
@@ -171,7 +171,7 @@
     {
       "id": "HeartsButton",
       "title": "HeartsButton",
-      "source": "@qentrah/mathing-ui/HeartsButton",
+      "source": "@qentrah/do-ui/HeartsButton",
       "exports": [
         "HeartsButton"
       ],
@@ -181,7 +181,7 @@
     {
       "id": "LearnerAvatar",
       "title": "LearnerAvatar",
-      "source": "@qentrah/mathing-ui/LearnerAvatar",
+      "source": "@qentrah/do-ui/LearnerAvatar",
       "exports": [
         "AVATARS",
         "AvatarName",
@@ -193,7 +193,7 @@
     {
       "id": "LearningPath",
       "title": "LearningPath",
-      "source": "@qentrah/mathing-ui/LearningPath",
+      "source": "@qentrah/do-ui/LearningPath",
       "exports": [
         "LearningPath"
       ],
@@ -203,7 +203,7 @@
     {
       "id": "LessonCard",
       "title": "LessonCard",
-      "source": "@qentrah/mathing-ui/LessonCard",
+      "source": "@qentrah/do-ui/LessonCard",
       "exports": [
         "LessonCard"
       ],
@@ -213,7 +213,7 @@
     {
       "id": "LessonPrompt",
       "title": "LessonPrompt",
-      "source": "@qentrah/mathing-ui/LessonPrompt",
+      "source": "@qentrah/do-ui/LessonPrompt",
       "exports": [
         "LessonPrompt"
       ],
@@ -223,7 +223,7 @@
     {
       "id": "ListUI",
       "title": "ListUI",
-      "source": "@qentrah/mathing-ui/ListUI",
+      "source": "@qentrah/do-ui/ListUI",
       "exports": [
         "ListPage",
         "ListGroup",
@@ -236,7 +236,7 @@
     {
       "id": "LockedActivity",
       "title": "LockedActivity",
-      "source": "@qentrah/mathing-ui/LockedActivity",
+      "source": "@qentrah/do-ui/LockedActivity",
       "exports": [
         "LockedActivity"
       ],
@@ -246,7 +246,7 @@
     {
       "id": "MatchingPairs",
       "title": "MatchingPairs",
-      "source": "@qentrah/mathing-ui/MatchingPairs",
+      "source": "@qentrah/do-ui/MatchingPairs",
       "exports": [
         "MatchingPairs"
       ],
@@ -256,7 +256,7 @@
     {
       "id": "MathArtwork",
       "title": "MathArtwork",
-      "source": "@qentrah/mathing-ui/MathArtwork",
+      "source": "@qentrah/do-ui/MathArtwork",
       "exports": [
         "MathArtworkName",
         "MathArtwork",
@@ -268,7 +268,7 @@
     {
       "id": "MathDiagram",
       "title": "MathDiagram",
-      "source": "@qentrah/mathing-ui/MathDiagram",
+      "source": "@qentrah/do-ui/MathDiagram",
       "exports": [
         "MathDiagram"
       ],
@@ -278,7 +278,7 @@
     {
       "id": "MathExpression",
       "title": "MathExpression",
-      "source": "@qentrah/mathing-ui/MathExpression",
+      "source": "@qentrah/do-ui/MathExpression",
       "exports": [
         "MathExpression"
       ],
@@ -288,7 +288,7 @@
     {
       "id": "MathUI",
       "title": "MathUI",
-      "source": "@qentrah/mathing-ui/MathUI",
+      "source": "@qentrah/do-ui/MathUI",
       "exports": [
         "MathScreen",
         "Action",
@@ -301,7 +301,7 @@
     {
       "id": "ModeCharacter",
       "title": "ModeCharacter",
-      "source": "@qentrah/mathing-ui/ModeCharacter",
+      "source": "@qentrah/do-ui/ModeCharacter",
       "exports": [
         "CompanionReaction",
         "ModeCharacter"
@@ -312,7 +312,7 @@
     {
       "id": "Motion",
       "title": "Motion",
-      "source": "@qentrah/mathing-ui/Motion",
+      "source": "@qentrah/do-ui/Motion",
       "exports": [
         "MotionPressable",
         "MotionEntry",
@@ -325,7 +325,7 @@
     {
       "id": "NumberAnswer",
       "title": "NumberAnswer",
-      "source": "@qentrah/mathing-ui/NumberAnswer",
+      "source": "@qentrah/do-ui/NumberAnswer",
       "exports": [
         "NumberAnswer"
       ],
@@ -335,7 +335,7 @@
     {
       "id": "PageHeader",
       "title": "PageHeader",
-      "source": "@qentrah/mathing-ui/PageHeader",
+      "source": "@qentrah/do-ui/PageHeader",
       "exports": [
         "PageHeader"
       ],
@@ -345,7 +345,7 @@
     {
       "id": "PathLessonPopup",
       "title": "PathLessonPopup",
-      "source": "@qentrah/mathing-ui/PathLessonPopup",
+      "source": "@qentrah/do-ui/PathLessonPopup",
       "exports": [
         "PathLessonPopup"
       ],
@@ -355,7 +355,7 @@
     {
       "id": "PathNode",
       "title": "PathNode",
-      "source": "@qentrah/mathing-ui/PathNode",
+      "source": "@qentrah/do-ui/PathNode",
       "exports": [
         "PathNode"
       ],
@@ -365,7 +365,7 @@
     {
       "id": "PreferenceSwitch",
       "title": "PreferenceSwitch",
-      "source": "@qentrah/mathing-ui/PreferenceSwitch",
+      "source": "@qentrah/do-ui/PreferenceSwitch",
       "exports": [
         "PreferenceSwitch"
       ],
@@ -375,7 +375,7 @@
     {
       "id": "ProfileHero",
       "title": "ProfileHero",
-      "source": "@qentrah/mathing-ui/ProfileHero",
+      "source": "@qentrah/do-ui/ProfileHero",
       "exports": [
         "ProfileHero"
       ],
@@ -385,7 +385,7 @@
     {
       "id": "ProfileOverview",
       "title": "ProfileOverview",
-      "source": "@qentrah/mathing-ui/ProfileOverview",
+      "source": "@qentrah/do-ui/ProfileOverview",
       "exports": [
         "ProfileOverview",
         "ProfileAchievements"
@@ -396,7 +396,7 @@
     {
       "id": "ProgressMeter",
       "title": "ProgressMeter",
-      "source": "@qentrah/mathing-ui/ProgressMeter",
+      "source": "@qentrah/do-ui/ProgressMeter",
       "exports": [
         "ProgressMeter"
       ],
@@ -406,7 +406,7 @@
     {
       "id": "ProgressSaveNotice",
       "title": "ProgressSaveNotice",
-      "source": "@qentrah/mathing-ui/ProgressSaveNotice",
+      "source": "@qentrah/do-ui/ProgressSaveNotice",
       "exports": [
         "ProgressSaveNotice"
       ],
@@ -416,7 +416,7 @@
     {
       "id": "PuzzleScene",
       "title": "PuzzleScene",
-      "source": "@qentrah/mathing-ui/PuzzleScene",
+      "source": "@qentrah/do-ui/PuzzleScene",
       "exports": [
         "PuzzleScene"
       ],
@@ -426,7 +426,7 @@
     {
       "id": "QuestionInteraction",
       "title": "QuestionInteraction",
-      "source": "@qentrah/mathing-ui/QuestionInteraction",
+      "source": "@qentrah/do-ui/QuestionInteraction",
       "exports": [
         "QuestionInteraction",
         "MathExample"
@@ -437,7 +437,7 @@
     {
       "id": "QuestionStage",
       "title": "QuestionStage",
-      "source": "@qentrah/mathing-ui/QuestionStage",
+      "source": "@qentrah/do-ui/QuestionStage",
       "exports": [
         "QuestionStage"
       ],
@@ -447,7 +447,7 @@
     {
       "id": "RankBadge",
       "title": "RankBadge",
-      "source": "@qentrah/mathing-ui/RankBadge",
+      "source": "@qentrah/do-ui/RankBadge",
       "exports": [
         "RANKS",
         "RANK_DIVISIONS",
@@ -459,7 +459,7 @@
     {
       "id": "ResultIcon",
       "title": "ResultIcon",
-      "source": "@qentrah/mathing-ui/ResultIcon",
+      "source": "@qentrah/do-ui/ResultIcon",
       "exports": [
         "ResultIcon"
       ],
@@ -469,7 +469,7 @@
     {
       "id": "SocialButton",
       "title": "SocialButton",
-      "source": "@qentrah/mathing-ui/SocialButton",
+      "source": "@qentrah/do-ui/SocialButton",
       "exports": [
         "SocialButton"
       ],
@@ -479,7 +479,7 @@
     {
       "id": "StatsStrip",
       "title": "StatsStrip",
-      "source": "@qentrah/mathing-ui/StatsStrip",
+      "source": "@qentrah/do-ui/StatsStrip",
       "exports": [
         "StatsStrip"
       ],
@@ -489,7 +489,7 @@
     {
       "id": "StreakMoment",
       "title": "StreakMoment",
-      "source": "@qentrah/mathing-ui/StreakMoment",
+      "source": "@qentrah/do-ui/StreakMoment",
       "exports": [
         "StreakMoment"
       ],
@@ -499,7 +499,7 @@
     {
       "id": "SubjectDiagram",
       "title": "SubjectDiagram",
-      "source": "@qentrah/mathing-ui/SubjectDiagram",
+      "source": "@qentrah/do-ui/SubjectDiagram",
       "exports": [
         "SubjectDiagram"
       ],
@@ -509,7 +509,7 @@
     {
       "id": "TabBar",
       "title": "TabBar",
-      "source": "@qentrah/mathing-ui/TabBar",
+      "source": "@qentrah/do-ui/TabBar",
       "exports": [
         "TabBar"
       ],
@@ -519,7 +519,7 @@
     {
       "id": "UnitCheckpoint",
       "title": "UnitCheckpoint",
-      "source": "@qentrah/mathing-ui/UnitCheckpoint",
+      "source": "@qentrah/do-ui/UnitCheckpoint",
       "exports": [
         "UnitCheckpoint"
       ],
@@ -529,7 +529,7 @@
     {
       "id": "UnitChest",
       "title": "UnitChest",
-      "source": "@qentrah/mathing-ui/UnitChest",
+      "source": "@qentrah/do-ui/UnitChest",
       "exports": [
         "UnitChest"
       ],
@@ -539,7 +539,7 @@
     {
       "id": "VerificationModal",
       "title": "VerificationModal",
-      "source": "@qentrah/mathing-ui/VerificationModal",
+      "source": "@qentrah/do-ui/VerificationModal",
       "exports": [
         "VerificationModal"
       ],
@@ -549,7 +549,7 @@
     {
       "id": "Primitives",
       "title": "Primitives",
-      "source": "@qentrah/mathing-ui/Primitives",
+      "source": "@qentrah/do-ui/Primitives",
       "exports": [
         "Card",
         "Choice",
@@ -565,7 +565,7 @@
     {
       "id": "MathCanvas",
       "title": "MathCanvas",
-      "source": "@qentrah/mathing-ui/MathCanvas",
+      "source": "@qentrah/do-ui/MathCanvas",
       "exports": [
         "CoordinateBoard",
         "HundredGrid",
@@ -578,7 +578,7 @@
     {
       "id": "ReferenceLesson",
       "title": "ReferenceLesson",
-      "source": "@qentrah/mathing-ui/ReferenceLesson",
+      "source": "@qentrah/do-ui/ReferenceLesson",
       "exports": [
         "ReferenceLesson"
       ],
@@ -588,7 +588,7 @@
     {
       "id": "ScreenPreview",
       "title": "ScreenPreview",
-      "source": "@qentrah/mathing-ui/ScreenPreview",
+      "source": "@qentrah/do-ui/ScreenPreview",
       "exports": [
         "ScreenPreview"
       ],
@@ -598,7 +598,7 @@
     {
       "id": "UIProvider",
       "title": "UIProvider",
-      "source": "@qentrah/mathing-ui provider",
+      "source": "@qentrah/do-ui provider",
       "exports": [
         "UIProvider",
         "useUIOptions"

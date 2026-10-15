@@ -1,4 +1,4 @@
-# @qentrah/mathing-ui
+# @qentrah/do-ui
 
 A self-contained React Native UI package for playful mathematics apps. It includes typed controls, mathematical models, lesson presentation, profiles, progress, path nodes, rewards, and screen compositions. State, authentication, navigation, grading, hearts, XP and persistence belong to the consumer.
 
@@ -7,19 +7,19 @@ This is a real local package with its own `package.json`, public exports, compil
 ## Install the built package
 
 ```sh
-npm install @qentrah/mathing-ui
+npm install @qentrah/do-ui
 # or
-bun add @qentrah/mathing-ui
+bun add @qentrah/do-ui
 ```
 
-Within this workspace, use `"@qentrah/mathing-ui": "workspace:*"`. The package targets the tested Expo 54 / React Native 0.81 / React 19 setup, with NativeWind `5.0.0-preview.3`, SVG, Reanimated, safe-area context, WebView and Expo vector icons as peer dependencies. No router or learning-state provider is required.
+Within this workspace, use `"@qentrah/do-ui": "workspace:*"`. The package targets the tested Expo 54 / React Native 0.81 / React 19 setup, with NativeWind `5.0.0-preview.3`, SVG, Reanimated, safe-area context, WebView and Expo vector icons as peer dependencies. No router or learning-state provider is required.
 
 ## Configure NativeWind
 
 Follow the setup for the installed NativeWind preview version. In the host's `global.css`:
 
 ```css
-@import "@qentrah/mathing-ui/styles.css";
+@import "@qentrah/do-ui/styles.css";
 @source "./app";
 @source "./src";
 ```
@@ -33,7 +33,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { useFonts } from 'expo-font';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { UIProvider, fonts, Action, Card, HeartsButton } from '@qentrah/mathing-ui';
+import { UIProvider, fonts, Action, Card, HeartsButton } from '@qentrah/do-ui';
 
 export default function Example() {
   const [loaded] = useFonts(fonts);
@@ -65,15 +65,15 @@ export default function Example() {
 
 Each component's declaration describes its props. Former app-connected controls now have explicit callbacks: `PageHeader.onBack`, `ProfileHero.onEdit/onSettings/onShare`, `ProfileOverview.onNavigate`, `LearningPath.onSelect`, `HeartsButton.onPress`, `UnitCheckpoint.onPress`, `TabBar.onChange`, and `ProgressSaveNotice.onRetry`.
 
-`ScreenPreview` and `ReferenceLesson` are optional self-contained demonstration compositions. The 117 grade examples are imported separately from `@qentrah/mathing-ui/fixtures`; they are not reviewed assessment content or pixel-perfect Duolingo replicas. The fox retains its documented single-pose limitation. No reference-brand media ships in this package.
+`ScreenPreview` and `ReferenceLesson` are optional self-contained demonstration compositions. The 117 grade examples are imported separately from `@qentrah/do-ui/fixtures`; they are not reviewed assessment content or pixel-perfect Duolingo replicas. The fox retains its documented single-pose limitation. No reference-brand media ships in this package.
 
 ## Build and verify
 
 ```sh
-pnpm --filter @qentrah/mathing-ui build
-pnpm --filter @qentrah/mathing-ui test
-pnpm --filter @qentrah/mathing-ui exec npm pack
-pnpm --filter @qentrah/mathing-ui-docs web
+pnpm --filter @qentrah/do-ui build
+pnpm --filter @qentrah/do-ui test
+pnpm --filter @qentrah/do-ui exec npm pack
+pnpm --filter @qentrah/do-ui-docs web
 ```
 
 `npm pack` runs the build and produces an installable tarball containing `src`, `dist`, assets, styles, declarations and attribution. Metro/browser bundlers select source entry points so NativeWind and worklets compile in the host. The default entry also provides compiled CommonJS. Nothing is published automatically.
