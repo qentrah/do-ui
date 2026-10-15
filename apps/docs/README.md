@@ -1,6 +1,6 @@
 # Do UI Showcase
 
-[Live documentation and previews](https://do-ui-qentrah.vercel.app) · [GitHub](https://github.com/qentrah/do-ui) · [npm](https://www.npmjs.com/package/@qentrah/do-ui)
+[Live documentation and previews](https://do-ui.qentrah.com) · [GitHub](https://github.com/qentrah/do-ui) · [npm](https://www.npmjs.com/package/@qentrah/do-ui)
 A separate Expo app for `@qentrah/do-ui`. It has its own package manifest, app identity, Router tree, Metro/PostCSS configuration, fonts, TypeScript checks and web build. It imports reusable UI through the package name and has no DodoMath accounts, curriculum bank, XP store or backend configuration.
 
 ```sh
