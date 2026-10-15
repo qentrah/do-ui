@@ -70,3 +70,6 @@ const docs=Object.fromEntries(catalog.components.map(entry=>{
 const screenDocs=Object.fromEntries(catalog.screens.map(entry=>[entry.id,{description:`${entry.title} is an interactive ${entry.family} screen composition. It uses disposable local state and does not authenticate, grade attempts or persist learner progress.`,usage:`import { ScreenPreview } from '@qentrah/do-ui';\n\nexport function ${entry.id.replace(/(^|-)(\w)/g,(_,p,c)=>c.toUpperCase())}Screen() {\n  return <ScreenPreview family=${JSON.stringify(entry.family)} title=${JSON.stringify(entry.title)} />;\n}`,apis:docs.ScreenPreview.apis,note:'Screen-family template, not the original production route. Callbacks and backend integration belong to the consuming app.'}]));
 fs.writeFileSync(path.join(__dirname,'../src/data/componentDocs.json'),JSON.stringify(docs));
 fs.writeFileSync(path.join(__dirname,'../src/data/screenDocs.json'),JSON.stringify(screenDocs));
+
+const manifest=require(path.join(root,'package.json'));
+fs.writeFileSync(path.join(__dirname,'../src/data/packageInfo.json'),JSON.stringify({name:manifest.name,version:manifest.version,homepage:manifest.homepage}));

@@ -1,5 +1,6 @@
 # @qentrah/do-ui
 
+[Live documentation and previews](https://do-ui-qentrah.vercel.app) · [GitHub](https://github.com/qentrah/do-ui) · [npm](https://www.npmjs.com/package/@qentrah/do-ui)
 A self-contained React Native UI package for playful mathematics apps. It includes typed controls, mathematical models, lesson presentation, profiles, progress, path nodes, rewards, and screen compositions. State, authentication, navigation, grading, hearts, XP and persistence belong to the consumer.
 
 This is a real local package with its own `package.json`, public exports, compiled JavaScript, TypeScript declarations, CSS, original images and licensed fonts. It imports no DodoMath application routes, stores, backend clients or `@/` aliases. `apps/docs` is a separate Expo app that consumes the package by name.

@@ -1,3 +1,4 @@
+import packageInfo from '../data/packageInfo.json';
 import { useState } from 'react';
 import { Text, View } from 'react-native';
 import { Card, MotionPressable, colors } from '@qentrah/do-ui';
@@ -32,6 +33,6 @@ export function SetupDocumentation(){
   <Card title="3. Compose your UI"><CodeBlock fileName="Summary.tsx" language="tsx" code={'import { Action, Card, HeartsButton } from "@qentrah/do-ui";\n\nexport function Summary() {\n  return (\n    <Card title="Ready for your next lesson?">\n      <HeartsButton hearts={5} onPress={() => {}} />\n      <Action label="Continue" onPress={() => {}} />\n    </Card>\n  );\n}'}/></Card>
   <Card title="Fonts and motion"><CodeBlock fileName="app/_layout.tsx" language="tsx" code={'import { useFonts } from "expo-font";\nimport { fonts, UIProvider } from "@qentrah/do-ui";\n\n// In your app layout:\nconst [loaded] = useFonts(fonts);\n// Wait until loaded, then wrap your UI:\n<UIProvider animations={true}>{children}</UIProvider>'}/><Text className="ui__body-small text-text-secondary">The provider controls optional motion and respects system reduced motion. Wrap your app in SafeAreaProvider as usual. NativeWind controls layout; animated values and native-only props use React Native styles.</Text></Card>
   <Card title="Scope and ownership"><Text className="ui__body text-text-secondary">Components are controlled presentation UI. Authentication, grading, progress, hearts, persistence and navigation remain in the consuming app. The 37 screens are composition templates; the 117 Math panels are reference adaptations with disposable answers. Use the API tab for authoritative prop definitions.</Text></Card>
-  <View className="flex-row items-center gap-2"><View style={{backgroundColor:colors.brand}} className="w-2 h-2 rounded-full"/><Text className="ui__body-small text-text-secondary">Local package v0.1.0 · mobile and web · no backend required</Text></View>
+  <View className="flex-row items-center gap-2"><View style={{backgroundColor:colors.brand}} className="w-2 h-2 rounded-full"/><Text className="ui__body-small text-text-secondary">Package v{packageInfo.version} · mobile and web · no backend required</Text></View>
  </View>;
 }

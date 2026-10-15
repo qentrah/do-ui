@@ -1,5 +1,6 @@
 # Do UI
 
+[Live documentation and previews](https://do-ui-qentrah.vercel.app) · [GitHub](https://github.com/qentrah/do-ui) · [npm](https://www.npmjs.com/package/@qentrah/do-ui)
 Qentrah's React Native component library for playful mathematics interfaces. Includes 57 component modules, 37 screen-family templates, bundled original artwork and fonts, and 117 authored exercise-reference adaptations. Components use typed props and caller-owned state.
 
 ## Install
