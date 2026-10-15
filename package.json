@@ -1,0 +1,11 @@
+{
+  "name": "mathing-ui-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "build": "pnpm --filter @qentrah/mathing-ui build && pnpm --filter @qentrah/mathing-ui-docs build:web",
+    "dev": "pnpm --filter @qentrah/mathing-ui-docs web",
+    "check": "pnpm -r lint && pnpm -r typecheck && pnpm -r test && pnpm --filter @qentrah/mathing-ui-docs docs:validate"
+  }
+}

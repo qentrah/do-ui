@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "Mathing UI Showcase", "slug": "mathing-ui-docs", "scheme": "mathing-ui",
+    "version": "0.1.0", "orientation": "default", "newArchEnabled": true,
+    "ios": {"supportsTablet": true, "bundleIdentifier": "com.qentrah.mathingui"},
+    "android": {"package": "com.qentrah.mathingui"},
+    "web": {"output": "static"}, "plugins": ["expo-router"]
+  }
+}

@@ -1,0 +1,1019 @@
+{
+  "components": [
+    {
+      "id": "AlgebraModel",
+      "title": "AlgebraModel",
+      "source": "@qentrah/mathing-ui/AlgebraModel",
+      "exports": [
+        "AlgebraModel"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "CharacterSprite",
+      "title": "CharacterSprite",
+      "source": "@qentrah/mathing-ui/CharacterSprite",
+      "exports": [
+        "CharacterName",
+        "CharacterPose",
+        "CharacterSprite"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ChestArtwork",
+      "title": "ChestArtwork",
+      "source": "@qentrah/mathing-ui/ChestArtwork",
+      "exports": [
+        "ChestArtwork"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "CompletedMedal",
+      "title": "CompletedMedal",
+      "source": "@qentrah/mathing-ui/CompletedMedal",
+      "exports": [
+        "CompletedMedal"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "CompletionMoment",
+      "title": "CompletionMoment",
+      "source": "@qentrah/mathing-ui/CompletionMoment",
+      "exports": [
+        "CompletionMoment"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "CoursePlayer",
+      "title": "CoursePlayer",
+      "source": "@qentrah/mathing-ui/CoursePlayer",
+      "exports": [
+        "PlayerProps",
+        "CoursePlayer"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "Dodo",
+      "title": "Dodo",
+      "source": "@qentrah/mathing-ui/Dodo",
+      "exports": [
+        "Dodo",
+        "DodoMood"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "DuoIcons",
+      "title": "DuoIcons",
+      "source": "@qentrah/mathing-ui/DuoIcons",
+      "exports": [
+        "DuoIcon"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "FeedbackClock",
+      "title": "FeedbackClock",
+      "source": "@qentrah/mathing-ui/FeedbackClock",
+      "exports": [
+        "FeedbackClock",
+        "useFeedbackClock"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "FeedbackPanel",
+      "title": "FeedbackPanel",
+      "source": "@qentrah/mathing-ui/FeedbackPanel",
+      "exports": [
+        "FeedbackFooter",
+        "FeedbackPanel"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "Fox",
+      "title": "Fox",
+      "source": "@qentrah/mathing-ui/Fox",
+      "exports": [
+        "FoxMood",
+        "Fox"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "FoxLessonMotion",
+      "title": "FoxLessonMotion",
+      "source": "@qentrah/mathing-ui/FoxLessonMotion",
+      "exports": [
+        "FoxLessonAction",
+        "FoxLessonMotion"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "FoxMotion",
+      "title": "FoxMotion",
+      "source": "@qentrah/mathing-ui/FoxMotion",
+      "exports": [
+        "FoxMotion"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "FractionModel",
+      "title": "FractionModel",
+      "source": "@qentrah/mathing-ui/FractionModel",
+      "exports": [
+        "FractionModel"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "FunctionGraph",
+      "title": "FunctionGraph",
+      "source": "@qentrah/mathing-ui/FunctionGraph",
+      "exports": [
+        "FunctionGraph"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "GoldStripe",
+      "title": "GoldStripe",
+      "source": "@qentrah/mathing-ui/GoldStripe",
+      "exports": [
+        "GoldStripe"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "HeartsButton",
+      "title": "HeartsButton",
+      "source": "@qentrah/mathing-ui/HeartsButton",
+      "exports": [
+        "HeartsButton"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "LearnerAvatar",
+      "title": "LearnerAvatar",
+      "source": "@qentrah/mathing-ui/LearnerAvatar",
+      "exports": [
+        "AVATARS",
+        "AvatarName",
+        "LearnerAvatar"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "LearningPath",
+      "title": "LearningPath",
+      "source": "@qentrah/mathing-ui/LearningPath",
+      "exports": [
+        "LearningPath"
+      ],
+      "usesStore": false,
+      "kind": "screen"
+    },
+    {
+      "id": "LessonCard",
+      "title": "LessonCard",
+      "source": "@qentrah/mathing-ui/LessonCard",
+      "exports": [
+        "LessonCard"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "LessonPrompt",
+      "title": "LessonPrompt",
+      "source": "@qentrah/mathing-ui/LessonPrompt",
+      "exports": [
+        "LessonPrompt"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ListUI",
+      "title": "ListUI",
+      "source": "@qentrah/mathing-ui/ListUI",
+      "exports": [
+        "ListPage",
+        "ListGroup",
+        "ListRow",
+        "EmptyList"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "LockedActivity",
+      "title": "LockedActivity",
+      "source": "@qentrah/mathing-ui/LockedActivity",
+      "exports": [
+        "LockedActivity"
+      ],
+      "usesStore": false,
+      "kind": "screen"
+    },
+    {
+      "id": "MatchingPairs",
+      "title": "MatchingPairs",
+      "source": "@qentrah/mathing-ui/MatchingPairs",
+      "exports": [
+        "MatchingPairs"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "MathArtwork",
+      "title": "MathArtwork",
+      "source": "@qentrah/mathing-ui/MathArtwork",
+      "exports": [
+        "MathArtworkName",
+        "MathArtwork",
+        "subjectArtwork"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "MathDiagram",
+      "title": "MathDiagram",
+      "source": "@qentrah/mathing-ui/MathDiagram",
+      "exports": [
+        "MathDiagram"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "MathExpression",
+      "title": "MathExpression",
+      "source": "@qentrah/mathing-ui/MathExpression",
+      "exports": [
+        "MathExpression"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "MathUI",
+      "title": "MathUI",
+      "source": "@qentrah/mathing-ui/MathUI",
+      "exports": [
+        "MathScreen",
+        "Action",
+        "Heading",
+        "CourseCard"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ModeCharacter",
+      "title": "ModeCharacter",
+      "source": "@qentrah/mathing-ui/ModeCharacter",
+      "exports": [
+        "CompanionReaction",
+        "ModeCharacter"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "Motion",
+      "title": "Motion",
+      "source": "@qentrah/mathing-ui/Motion",
+      "exports": [
+        "MotionPressable",
+        "MotionEntry",
+        "MotionReaction",
+        "MotionProgress"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "NumberAnswer",
+      "title": "NumberAnswer",
+      "source": "@qentrah/mathing-ui/NumberAnswer",
+      "exports": [
+        "NumberAnswer"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "PageHeader",
+      "title": "PageHeader",
+      "source": "@qentrah/mathing-ui/PageHeader",
+      "exports": [
+        "PageHeader"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "PathLessonPopup",
+      "title": "PathLessonPopup",
+      "source": "@qentrah/mathing-ui/PathLessonPopup",
+      "exports": [
+        "PathLessonPopup"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "PathNode",
+      "title": "PathNode",
+      "source": "@qentrah/mathing-ui/PathNode",
+      "exports": [
+        "PathNode"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "PreferenceSwitch",
+      "title": "PreferenceSwitch",
+      "source": "@qentrah/mathing-ui/PreferenceSwitch",
+      "exports": [
+        "PreferenceSwitch"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ProfileHero",
+      "title": "ProfileHero",
+      "source": "@qentrah/mathing-ui/ProfileHero",
+      "exports": [
+        "ProfileHero"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ProfileOverview",
+      "title": "ProfileOverview",
+      "source": "@qentrah/mathing-ui/ProfileOverview",
+      "exports": [
+        "ProfileOverview",
+        "ProfileAchievements"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ProgressMeter",
+      "title": "ProgressMeter",
+      "source": "@qentrah/mathing-ui/ProgressMeter",
+      "exports": [
+        "ProgressMeter"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ProgressSaveNotice",
+      "title": "ProgressSaveNotice",
+      "source": "@qentrah/mathing-ui/ProgressSaveNotice",
+      "exports": [
+        "ProgressSaveNotice"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "PuzzleScene",
+      "title": "PuzzleScene",
+      "source": "@qentrah/mathing-ui/PuzzleScene",
+      "exports": [
+        "PuzzleScene"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "QuestionInteraction",
+      "title": "QuestionInteraction",
+      "source": "@qentrah/mathing-ui/QuestionInteraction",
+      "exports": [
+        "QuestionInteraction",
+        "MathExample"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "QuestionStage",
+      "title": "QuestionStage",
+      "source": "@qentrah/mathing-ui/QuestionStage",
+      "exports": [
+        "QuestionStage"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "RankBadge",
+      "title": "RankBadge",
+      "source": "@qentrah/mathing-ui/RankBadge",
+      "exports": [
+        "RANKS",
+        "RANK_DIVISIONS",
+        "RankBadge"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ResultIcon",
+      "title": "ResultIcon",
+      "source": "@qentrah/mathing-ui/ResultIcon",
+      "exports": [
+        "ResultIcon"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "SocialButton",
+      "title": "SocialButton",
+      "source": "@qentrah/mathing-ui/SocialButton",
+      "exports": [
+        "SocialButton"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "StatsStrip",
+      "title": "StatsStrip",
+      "source": "@qentrah/mathing-ui/StatsStrip",
+      "exports": [
+        "StatsStrip"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "StreakMoment",
+      "title": "StreakMoment",
+      "source": "@qentrah/mathing-ui/StreakMoment",
+      "exports": [
+        "StreakMoment"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "SubjectDiagram",
+      "title": "SubjectDiagram",
+      "source": "@qentrah/mathing-ui/SubjectDiagram",
+      "exports": [
+        "SubjectDiagram"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "TabBar",
+      "title": "TabBar",
+      "source": "@qentrah/mathing-ui/TabBar",
+      "exports": [
+        "TabBar"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "UnitCheckpoint",
+      "title": "UnitCheckpoint",
+      "source": "@qentrah/mathing-ui/UnitCheckpoint",
+      "exports": [
+        "UnitCheckpoint"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "UnitChest",
+      "title": "UnitChest",
+      "source": "@qentrah/mathing-ui/UnitChest",
+      "exports": [
+        "UnitChest"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "VerificationModal",
+      "title": "VerificationModal",
+      "source": "@qentrah/mathing-ui/VerificationModal",
+      "exports": [
+        "VerificationModal"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "Primitives",
+      "title": "Primitives",
+      "source": "@qentrah/mathing-ui/Primitives",
+      "exports": [
+        "Card",
+        "Choice",
+        "Field",
+        "Badge",
+        "IconButton",
+        "StatCard",
+        "Section"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "MathCanvas",
+      "title": "MathCanvas",
+      "source": "@qentrah/mathing-ui/MathCanvas",
+      "exports": [
+        "CoordinateBoard",
+        "HundredGrid",
+        "GeometryBoard",
+        "LiquidBoard"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ReferenceLesson",
+      "title": "ReferenceLesson",
+      "source": "@qentrah/mathing-ui/ReferenceLesson",
+      "exports": [
+        "ReferenceLesson"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "ScreenPreview",
+      "title": "ScreenPreview",
+      "source": "@qentrah/mathing-ui/ScreenPreview",
+      "exports": [
+        "ScreenPreview"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    },
+    {
+      "id": "UIProvider",
+      "title": "UIProvider",
+      "source": "@qentrah/mathing-ui provider",
+      "exports": [
+        "UIProvider",
+        "useUIOptions"
+      ],
+      "usesStore": false,
+      "kind": "component"
+    }
+  ],
+  "screens": [
+    {
+      "id": "auth-sign-in",
+      "title": "Sign In",
+      "route": "/(auth)/sign-in",
+      "source": "Standalone template / auth-sign-in",
+      "family": "auth",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "auth-sign-up",
+      "title": "Sign Up",
+      "route": "/(auth)/sign-up",
+      "source": "Standalone template / auth-sign-up",
+      "family": "auth",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-ai-teacher",
+      "title": "Ai Teacher",
+      "route": "/(tabs)/ai-teacher",
+      "source": "Standalone template / tabs-ai-teacher",
+      "family": "review",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-challenges",
+      "title": "Challenges",
+      "route": "/(tabs)/challenges",
+      "source": "Standalone template / tabs-challenges",
+      "family": "quests",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-chat",
+      "title": "Chat",
+      "route": "/(tabs)/chat",
+      "source": "Standalone template / tabs-chat",
+      "family": "redirect",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-home",
+      "title": "Home",
+      "route": "/(tabs)",
+      "source": "Standalone template / tabs-home",
+      "family": "path",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-leaderboard",
+      "title": "Leaderboard",
+      "route": "/(tabs)/leaderboard",
+      "source": "Standalone template / tabs-leaderboard",
+      "family": "leaderboard",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-learn",
+      "title": "Learn",
+      "route": "/(tabs)/learn",
+      "source": "Standalone template / tabs-learn",
+      "family": "subjects",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-profile",
+      "title": "Profile",
+      "route": "/(tabs)/profile",
+      "source": "Standalone template / tabs-profile",
+      "family": "profile",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "tabs-puzzles",
+      "title": "Puzzles",
+      "route": "/(tabs)/puzzles",
+      "source": "Standalone template / tabs-puzzles",
+      "family": "games",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "account",
+      "title": "Account",
+      "route": "/account",
+      "source": "Standalone template / account",
+      "family": "account",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "design-lab",
+      "title": "Design Lab",
+      "route": "/design-lab",
+      "source": "Standalone template / design-lab",
+      "family": "exercise",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "dodo-studio",
+      "title": "Dodo Studio",
+      "route": "/dodo-studio",
+      "source": "Standalone template / dodo-studio",
+      "family": "studio",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "exam-id",
+      "title": "Exam",
+      "route": "/exam/[id]",
+      "source": "Standalone template / exam-id",
+      "family": "exercise",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "fox-studio",
+      "title": "Fox Studio",
+      "route": "/fox-studio",
+      "source": "Standalone template / fox-studio",
+      "family": "studio",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "friends",
+      "title": "Friends",
+      "route": "/friends",
+      "source": "Standalone template / friends",
+      "family": "friends",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "heart-recovery",
+      "title": "Heart Recovery",
+      "route": "/heart-recovery",
+      "source": "Standalone template / heart-recovery",
+      "family": "recovery",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "home",
+      "title": "Home",
+      "route": "/",
+      "source": "Standalone template / home",
+      "family": "path",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "language-select",
+      "title": "Language Select",
+      "route": "/language-select",
+      "source": "Standalone template / language-select",
+      "family": "subjects",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "learner-id",
+      "title": "Learner",
+      "route": "/learner/[id]",
+      "source": "Standalone template / learner-id",
+      "family": "profile",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "lesson-id",
+      "title": "Lesson",
+      "route": "/lesson/[id]",
+      "source": "Standalone template / lesson-id",
+      "family": "video",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "lesson-method-id",
+      "title": "Lesson Method",
+      "route": "/lesson-method/[id]",
+      "source": "Standalone template / lesson-method-id",
+      "family": "example",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "mistakes",
+      "title": "Mistakes",
+      "route": "/mistakes",
+      "source": "Standalone template / mistakes",
+      "family": "review",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "onboarding",
+      "title": "Onboarding",
+      "route": "/onboarding",
+      "source": "Standalone template / onboarding",
+      "family": "onboarding",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "practice-puzzles",
+      "title": "Puzzles",
+      "route": "/practice/puzzles",
+      "source": "Standalone template / practice-puzzles",
+      "family": "games",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "practice-videos",
+      "title": "Videos",
+      "route": "/practice/videos",
+      "source": "Standalone template / practice-videos",
+      "family": "video",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "progress-id",
+      "title": "Progress",
+      "route": "/progress/[id]",
+      "source": "Standalone template / progress-id",
+      "family": "progress",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "progress-home",
+      "title": "Home",
+      "route": "/progress",
+      "source": "Standalone template / progress-home",
+      "family": "path",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "quests",
+      "title": "Quests",
+      "route": "/quests",
+      "source": "Standalone template / quests",
+      "family": "quests",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "ranks",
+      "title": "Ranks",
+      "route": "/ranks",
+      "source": "Standalone template / ranks",
+      "family": "ranks",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "reward-preview",
+      "title": "Reward Preview",
+      "route": "/reward-preview",
+      "source": "Standalone template / reward-preview",
+      "family": "result",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "route": "/settings",
+      "source": "Standalone template / settings",
+      "family": "settings",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "sounds",
+      "title": "Sounds",
+      "route": "/sounds",
+      "source": "Standalone template / sounds",
+      "family": "settings",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics",
+      "route": "/statistics",
+      "source": "Standalone template / statistics",
+      "family": "statistics",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "studied",
+      "title": "Studied",
+      "route": "/studied",
+      "source": "Standalone template / studied",
+      "family": "review",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "topics",
+      "title": "Topics",
+      "route": "/topics",
+      "source": "Standalone template / topics",
+      "family": "subjects",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    },
+    {
+      "id": "working-node-id",
+      "title": "Working Node",
+      "route": "/working-node/[id]",
+      "source": "Standalone template / working-node-id",
+      "family": "redirect",
+      "redirect": false,
+      "developmentOnly": false,
+      "components": [],
+      "exportName": "ScreenPreview"
+    }
+  ]
+}

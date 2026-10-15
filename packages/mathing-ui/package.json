@@ -1,0 +1,91 @@
+{
+  "name": "@qentrah/mathing-ui",
+  "version": "0.1.0",
+  "description": "Reusable React Native math learning UI, with caller-owned state and callbacks.",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "react-native": "./src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "assets",
+    "styles.css",
+    "nativewind-env.d.ts",
+    "README.md",
+    "CREDITS.md",
+    "scripts",
+    "tsconfig.json",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "react-native": "./src/index.ts",
+      "browser": "./src/index.ts",
+      "import": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./fixtures": {
+      "types": "./dist/data/uiReferenceScreens.d.ts",
+      "react-native": "./src/data/uiReferenceScreens.ts",
+      "browser": "./src/data/uiReferenceScreens.ts",
+      "import": "./src/data/uiReferenceScreens.ts",
+      "default": "./dist/data/uiReferenceScreens.js"
+    },
+    "./styles.css": "./styles.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src",
+    "test": "node --test tests/*.test.cjs",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-svg": "15.12.1",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-worklets": "0.5.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-webview": "13.15.0",
+    "@expo/vector-icons": "^15.0.3",
+    "nativewind": "5.0.0-preview.3",
+    "tailwindcss": "^4.3.0",
+    "react-native-css": "3.0.7"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/react": "19.1.17",
+    "@types/node": "26.6.5",
+    "eslint": "9.39.5",
+    "eslint-config-expo": "10.0.0"
+  },
+  "author": "Qentrah",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qentrah/mathing-ui.git",
+    "directory": "packages/mathing-ui"
+  },
+  "homepage": "https://github.com/qentrah/mathing-ui#readme",
+  "bugs": {
+    "url": "https://github.com/qentrah/mathing-ui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "math",
+    "education",
+    "ui",
+    "nativewind",
+    "qentrah"
+  ]
+}

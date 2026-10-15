@@ -1,0 +1,2 @@
+export type LessonResult = {attemptId:string;lessonId:string;total:number;correct:number;mistakes:number;accuracy:number;stars:number;passed:boolean;verified:boolean;xp:number;finishedAt:number;durationMs?:number};
+export function formatDuration(ms:number|undefined){if(ms===undefined||!Number.isFinite(ms))return '—';const seconds=Math.floor(Math.max(0,ms)/1000);return `${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;}

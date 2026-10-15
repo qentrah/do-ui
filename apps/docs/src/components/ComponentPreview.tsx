@@ -1,0 +1,77 @@
+import { CompletionMoment, UIProvider, HeartsButton, UnitCheckpoint, UnitChest, LearningPath, TabBar, ProgressSaveNotice, LockedActivity, PageHeader, colors , Action, CourseCard, Heading, MathScreen , ListGroup, ListRow, EmptyList , PathNode , PathLessonPopup , CompletedMedal , ChestArtwork , ProgressMeter , ProfileOverview , ProfileHero , PreferenceSwitch , Fox , FoxMotion , FoxLessonMotion , CharacterSprite , LearnerAvatar , RankBadge , MathArtwork , MathExpression , MathDiagram , SubjectDiagram , AlgebraModel , NumberAnswer , FractionModel , MatchingPairs , QuestionInteraction, MathExample , QuestionStage , LessonPrompt , ModeCharacter , PuzzleScene , FunctionGraph , DuoIcon , ResultIcon , StreakMoment , GoldStripe , FeedbackFooter, FeedbackPanel , FeedbackClock , MotionEntry, MotionPressable, MotionProgress, MotionReaction , StatsStrip , LessonCard , SocialButton , VerificationModal , CoursePlayer , ScreenPreview , Badge, Card, Choice, Field, Section, StatCard , CoordinateBoard, GeometryBoard, HundredGrid, LiquidBoard , ReferenceLesson } from '@qentrah/mathing-ui';
+import { useState } from 'react';
+import { Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import type { Question } from '@qentrah/mathing-ui';
+import { REFERENCE_SCREENS } from '@qentrah/mathing-ui/fixtures';
+
+const question: Question = { kind:'number',prompt:'How many counters altogether?',equation:'3 + 4 = ?',answer:'7',options:[],sourceStart:0,explanation:'Three plus four makes seven.',diagram:{kind:'counters',groups:[3,4]} };
+/** Actual presentational modules, with caller-owned state and callbacks. */
+export function ComponentPreview({ id }: { id: string }) {
+  const [value,setValue]=useState('');
+  const [selected,setSelected]=useState(false);
+  const [play,setPlay]=useState(0);
+  const [notice,setNotice]=useState('');
+  let content;
+  switch(id){
+    case 'UIProvider':content=<UIProvider animations={selected}><Card title="Presentation preferences"><Text className="ui__body text-text-secondary">Animations: {selected?'on':'off'}. System reduced motion is always respected.</Text><Action label="Toggle animations" onPress={()=>setSelected(!selected)}/><MotionReaction reaction={selected?'success':'retry'}><MathArtwork name="streak" size={72}/></MotionReaction></Card></UIProvider>;break;
+    case 'MathUI': case 'Action': content=<View className="gap-3"><Heading title="One more step" subtitle="A clear action and an optional alternative."/><Action label="Continue" onPress={()=>setNotice('Continue selected.')}/><Action secondary label="Review example" onPress={()=>setNotice('Review selected.')}/><Action label="Check disabled" disabled onPress={()=>{}}/><Action tone="success" label="Correct answer" onPress={()=>setNotice('Success action selected.')}/><Action tone="error" label="Try again" onPress={()=>setNotice('Retry action selected.')}/><CourseCard title="Number sense" subtitle="Four questions · optional example" onPress={()=>setNotice('Course selected.')}/></View>;break;
+    case 'ListUI':content=<><ListGroup><ListRow title="Sounds" icon="volume-high" value="On" selected={selected} onPress={()=>setSelected(!selected)}/><ListRow title="Daily goal" icon="flag" value="15 XP" onPress={()=>setNotice('Goal selected.')}/></ListGroup><EmptyList message="Nothing to review yet."/></>;break;
+    case 'PathNode':content=<View className="flex-row flex-wrap justify-center gap-3">{['Available','Current','Passed','Locked'].map((label,i)=><PathNode key={label} label={label} passed={i===2?3:0} total={3} studied={0} videoTotal={0} active={i===1} expanded={false} locked={i===3} onPress={()=>setNotice(`${label} node selected.`)}/>)}</View>;break;
+    case 'PathLessonPopup':content=<View className="relative h-64"><PathNode label="Select counting step" passed={0} total={3} studied={0} videoTotal={0} active expanded locked={false} onPress={()=>setNotice('Step selected.')}/><PathLessonPopup title="Counting" detail="Lesson 1 · four questions" offset={0} locked={false} watch={()=>setNotice('Optional video selected.')} onClose={()=>setNotice('Close selected.')} onStart={()=>setNotice('Practice selected.')}/></View>;break;
+    case 'NumberAnswer':content=<NumberAnswer value={value} onChange={setValue} disabled={false}/>;break;
+    case 'FractionModel':content=<FractionModel denominator={8} value={value} onChange={setValue} disabled={false}/>;break;
+    case 'MatchingPairs':content=<MatchingPairs pairs={ [['2 + 3','5'],['4 + 2','6'],['3 × 3','9']] } value={value} onChange={setValue} disabled={false}/>;break;
+    case 'QuestionInteraction':content=<><MathExample type="groups"/><QuestionInteraction question={question} value={value} onChange={setValue} disabled={false}/></>;break;
+    case 'QuestionStage':content=<QuestionStage question={question}/>;break;
+    case 'MathExpression':content=<><MathExpression value="2(x + 3) = 22"/><MathExpression value="● ● ● ● ●"/></>;break;
+    case 'MathDiagram':content=<MathDiagram diagram={{kind:'table',headers:['x','y'],rows:[['1','3'],['2','5'],['3','?']]}}/>;break;
+    case 'SubjectDiagram':content=<SubjectDiagram diagram={{kind:'fraction-bars',fractions:[[1,2],[2,4]]}}/>;break;
+    case 'AlgebraModel':content=<AlgebraModel groups={3} units={4}/>;break;
+    case 'FunctionGraph':content=<FunctionGraph question={{...question,kind:'function-graph',curveFamily:'linear',targetPoints:[[0,1],[1,3]],answer:'2,1'}} value={value} onChange={setValue} disabled={false}/>;break;
+    case 'LessonPrompt':content=<LessonPrompt prompt="Select three of the eight equal parts." mode="count" reaction="idle"/>;break;
+    case 'ModeCharacter':content=<View className="flex-row gap-3"><ModeCharacter mode="count"/><ModeCharacter mode="algebra"/><ModeCharacter mode="graph"/></View>;break;
+    case 'PuzzleScene':content=<><PuzzleScene question={{...question,scene:'bridge',sceneCount:5,sceneTotal:9}} success={selected}/><Action label="Toggle repaired bridge" onPress={()=>setSelected(!selected)}/><PuzzleScene question={{...question,scene:'matrix'}} success={false}/></>;break;
+    case 'CompletedMedal':content=<View className="items-center"><CompletedMedal size={120}/></View>;break;
+    case 'ChestArtwork':content=<View className="items-center gap-3"><ChestArtwork size={160} opened={selected}/><Action label="Toggle chest artwork" onPress={()=>setSelected(!selected)}/></View>;break;
+    case 'GoldStripe':content=<View className="relative h-24 overflow-hidden rounded-2xl items-center justify-center"><GoldStripe/><Text className="ui__card-title text-brand-ink">Unit complete</Text></View>;break;
+    case 'Fox':case 'Dodo':content=<View className="items-center"><Fox size={180} animate={false}/><Badge label="Current one-pose fox" tone="brand"/></View>;break;
+    case 'CharacterSprite':content=<View className="flex-row flex-wrap"><CharacterSprite character="fox" size={110}/><CharacterSprite character="nia" size={110}/><CharacterSprite character="orbit" size={110}/></View>;break;
+    case 'FoxMotion':content=<View className="items-center gap-3"><FoxMotion playId={play} size={180}/><Action label="Replay root motion" onPress={()=>setPlay(play+1)}/></View>;break;
+    case 'FoxLessonMotion':content=<View className="items-center gap-3"><FoxLessonMotion action={selected?'perfect':'recovery'} eventId={`library-${play}`} size={180}/><Action label="Toggle reaction" onPress={()=>{setSelected(!selected);setPlay(play+1);}}/></View>;break;
+    case 'MathArtwork':content=<View className="flex-row flex-wrap gap-4">{(['numbers','calculator','equation','geometry','fraction','graph','games','quiz','streak','matrix'] as const).map(name=><View key={name} className="items-center gap-2"><MathArtwork name={name} size={64}/><Text className="ui__body-small text-text-secondary">{name}</Text></View>)}</View>;break;
+    case 'DuoIcons':content=<View className="flex-row flex-wrap gap-5">{(['home','practice','chest','shield','profile','math','gem'] as const).map(name=><View key={name} className="items-center gap-2"><DuoIcon name={name} size={42}/><Text className="ui__body-small text-text-secondary">{name}</Text></View>)}</View>;break;
+    case 'LearnerAvatar':content=<View className="flex-row flex-wrap gap-4">{(['sun','ocean','mint'] as const).map(avatar=><LearnerAvatar key={avatar} avatar={avatar} size={80}/>)}</View>;break;
+    case 'RankBadge':content=<View className="flex-row flex-wrap gap-3">{Array.from({length:9},(_,i)=><RankBadge key={i} rank={i}/>)}</View>;break;
+    case 'ResultIcon':content=<View className="flex-row gap-5"><ResultIcon name="xp" size={40}/><ResultIcon name="accuracy" size={40}/><ResultIcon name="time" size={40}/></View>;break;
+    case 'ProgressMeter':content=<View className="gap-5"><ProgressMeter label="Example progress" percent={65}/><ProgressMeter label="Example ring progress" percent={65} ring/></View>;break;
+    case 'ProfileOverview':content=<ProfileOverview streak={7} xp={240} passed={4} perfect onNavigate={destination=>setNotice(`${destination} callback received.`)}/>;break;
+    case 'ProfileHero':content=<ProfileHero name="Alex" avatar="sun" onShare={()=>setNotice('Share preview selected. Nothing was published.')}/>;break;
+    case 'PreferenceSwitch':content=<PreferenceSwitch label="Demo preference" value={selected} onValueChange={setSelected}/>;break;
+    case 'StreakMoment':content=<StreakMoment count={3}/>;break;
+    case 'FeedbackPanel':content=<FeedbackFooter result={selected?'success':'retry'}><FeedbackPanel correct={selected} message="Three groups of two make six." mode="count"/><Action label="Toggle feedback" onPress={()=>setSelected(!selected)}/></FeedbackFooter>;break;
+    case 'FeedbackClock':content=<FeedbackClock.Provider value={null}><Badge label="No active presentation event"/><FeedbackPanel correct message="Static feedback without a presentation clock." mode="count"/></FeedbackClock.Provider>;break;
+    case 'Motion':content=<View className="gap-5"><MotionEntry trigger={play}><MotionReaction reaction={selected?'success':'retry'}><MathArtwork name="streak" size={72}/></MotionReaction></MotionEntry><MotionProgress value={selected?80:30}/><MotionPressable accessibilityRole="button" accessibilityLabel="Replay motion examples" onPress={()=>{setSelected(!selected);setPlay(play+1);}} className="min-h-12 bg-brand-soft rounded-xl items-center justify-center"><Text className="ui__button-label text-brand-ink">Replay motion</Text></MotionPressable></View>;break;
+    case 'StatsStrip':content=<StatsStrip items={[{label:'XP',value:120,icon:'flash',color:colors.brandText,onPress:()=>setNotice('Example XP')},{label:'Streak',value:3,icon:'flame',color:colors.brandText,onPress:()=>setNotice('Example streak')} ]}/>;break;
+    case 'LessonCard':content=<LessonCard index={0} isCompleted={selected} isInProgress={false} onPress={()=>setSelected(!selected)} lesson={{id:'demo',title:'Count and combine',xpReward:20,activityCount:4}}/>;break;
+    case 'SocialButton':content=<SocialButton label="Continue with Google" icon={<Ionicons name="logo-google" size={22}/>} onPress={()=>setNotice('Provider button preview only.')}/>;break;
+    case 'VerificationModal':content=<><Action label="Open verification modal" onPress={()=>setSelected(true)}/><VerificationModal visible={selected} email="demo@example.com" onClose={()=>setSelected(false)} onVerify={async()=>{setSelected(false);setNotice('Code entered in preview. No authentication request.');}} onResend={async()=>setNotice('Resend button preview only.')}/></>;break;
+    case 'CoursePlayer':content=selected?<CoursePlayer videoId={"JbhBdOfMEPs"} seek={null} onTimeChange={()=>{}}/>:<><ScreenPreview family="video" title="Course player"/><Action secondary label="Load sample course video" onPress={()=>setSelected(true)}/></>;break;
+    case 'CompletionMoment':content=<CompletionMoment result={{attemptId:'ui-library-result',lessonId:'ui-library-result',total:4,correct:4,mistakes:0,accuracy:1,stars:3,passed:true,verified:false,xp:0,finishedAt:0,durationMs:142000}}/>;break;
+    case 'LearningPath':content=<View className="h-[480px]"><LearningPath title="Number sense" steps={[{id:'one',title:'Counting',passed:3,total:3},{id:'two',title:'Equal groups',passed:0,total:3,current:true},{id:'three',title:'Checkpoint',passed:0,total:3,locked:true}]} onSelect={id=>setNotice(`Selected ${id}`)}/></View>;break;
+    case 'LockedActivity':content=<View className="h-[440px]"><LockedActivity requirement="Pass the counting unit first." onPrerequisite={()=>setNotice('Prerequisite callback received.')}/></View>;break;
+    case 'UnitCheckpoint':content=<UnitCheckpoint passed={false} available={false} completed={1} total={3} requirement="Pass the remaining unit lessons." onPress={()=>setNotice('Checkpoint callback received.')}/>;break;
+    case 'UnitChest':content=<UnitChest title="Counting unit" done={3} total={3} passed onContinue={()=>setNotice('Continue callback received.')}/>;break;
+    case 'TabBar':content=<TabBar selectedKey={value||'home'} onChange={setValue} items={[{key:'home',label:'Home',artwork:'numbers'},{key:'games',label:'Games',artwork:'games'},{key:'quests',label:'Quests',artwork:'quiz'},{key:'league',label:'League',artwork:'graph'},{key:'profile',label:'Profile',artwork:'fraction'}]}/>;break;
+    case 'PageHeader':content=<PageHeader title="Number sense" onBack={()=>setNotice('Back callback received.')}/>;break;
+    case 'HeartsButton':content=<HeartsButton hearts={selected?3:5} onPress={()=>setSelected(!selected)}/>;break;
+    case 'ProgressSaveNotice':content=<ProgressSaveNotice error={selected?null:'Progress could not be saved.'} onRetry={()=>{setSelected(true);setNotice('Retry callback received.');}}/>;break;
+    case 'Primitives':content=<Section title="Reusable controls"><Card title="A useful card"><Badge label="Available" tone="selection"/><Choice label="Selected choice" selected={selected} onPress={()=>setSelected(!selected)}/><Field label="Example input" value={value} onChangeText={setValue}/><StatCard label="Example XP" value="120"/></Card></Section>;break;
+    case 'MathCanvas':content=<View className="gap-3 items-center"><HundredGrid/><GeometryBoard/><LiquidBoard amount={2}/><CoordinateBoard selected={[]} onSelect={()=>setNotice('Coordinate selected.')}/></View>;break;
+    case 'ReferenceLesson':content=<ReferenceLesson screen={REFERENCE_SCREENS[0]} onClose={()=>setNotice('Close preview selected.')}/>;break;
+    case 'ScreenPreview':content=<ScreenPreview family="profile" title="Profile screen composition"/>;break;
+    case 'MathScreen':content=<View className="h-96"><MathScreen><Heading title="A reusable screen"/></MathScreen></View>;break;
+    default:content=<Text className="ui__body text-text-secondary">See the screen compositions for this module.</Text>;
+  }
+  return <View className="gap-4">{content}{notice&&<Text accessibilityLiveRegion="polite" className="ui__body text-selection-ink">{notice}</Text>}</View>;
+}
